@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Toddo</string>
+    <string name="no_list_to_do">No list to do</string>
+    <string name="nothing_to_do">Nothing to do</string>
+    <string name="drag_icon">Drag Icon</string>
+    <string name="delete_button">Delete Button</string>
+    <string name="hint_list_title">List Title</string>
+    <string name="reminder">Reminder</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="custom">Custom</string>
+    <string name="hint_enter_task">Enter Task</string>
+    <string name="done">Done</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="snooze_alarm_for"><b>Snooze Alarm</b> For</string>
+</resources>

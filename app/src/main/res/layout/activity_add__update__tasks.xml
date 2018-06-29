@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataUtils.Add_Update_Tasks"
+    android:orientation="vertical"
+    android:background="@color/background_color">
+
+    <include layout="@layout/toolbar"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/list_single_item_margin"
+        android:background="@drawable/list_item_selector">
+
+
+        <EditText
+            android:id="@+id/addTaskET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/list_single_item_margin"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/list_single_item_text_color"
+            android:textSize="@dimen/lists_single_item_textSize"
+            android:hint="@string/hint_enter_task"
+            android:inputType="text"
+            android:background="@null"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/list_single_item_margin">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_light_background">
+
+            <TextView
+                android:id="@+id/reminderTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/list_single_item_margin"
+                android:layout_marginRight="@dimen/list_single_item_margin"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/reminder"
+                android:textColor="@color/list_single_item_text_color"
+                android:textSize="@dimen/lists_single_item_textSize"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/reminderToggleBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/reminderTV"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/reminderTV"
+                app:layout_constraintVertical_bias="1.0"
+                android:visibility="gone"
+                android:onClick="cancelReminder"/>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reminderTV"
+                app:layout_constraintVertical_bias="0.232">
+
+                <TextView
+                    android:onClick="openTodayClock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:text="@string/today"
+                    android:textSize="18sp"
+                    android:drawableTop="@drawable/ic_today_reminder"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:onClick="openTomorrowClock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:text="@string/tomorrow"
+                    android:textSize="18sp"
+                    android:drawableTop="@drawable/ic_tomorrow_reminder"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:onClick="openCustomCalendarAndClock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:text="@string/custom"
+                    android:textSize="18sp"
+                    android:drawableTop="@drawable/ic_custom_reminder"
+                    android:gravity="center"/>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/reminderStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/list_single_item_margin"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                tools:text="Reminder Status"
+                android:textColor="@color/secondary_text_color"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

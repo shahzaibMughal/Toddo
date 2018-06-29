@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_weight_height">56dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="size_of_empty_list_text">25sp</dimen>
+    <dimen name="list_single_item_margin">5dp</dimen>
+    <dimen name="lists_single_item_textSize">30sp</dimen>
+</resources>

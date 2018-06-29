@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".AlarmUtils.SnoozeAlarm"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/snooze_alarm_for"
+        android:textSize="35sp"/>
+
+    <TextView
+        android:onClick="snoozeForFifteenMinutes"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:text="15 Minutes"
+        android:drawableTop="@drawable/ic_custom_reminder"
+        android:textSize="18sp"
+        android:gravity="center"/>
+    <TextView
+        android:onClick="snoozeForOneHour"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:text="1 Hour"
+        android:textSize="18sp"
+        android:drawableTop="@drawable/ic_custom_reminder"
+        android:gravity="center"/>
+    <TextView
+        android:onClick="snoozeForTwoHour"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:text="2 hour"
+        android:textSize="18sp"
+        android:drawableTop="@drawable/ic_custom_reminder"
+        android:gravity="center"/>
+    <TextView
+        android:onClick="customSnooze"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:text="Custom"
+        android:textSize="18sp"
+        android:drawableTop="@drawable/ic_custom_reminder"
+        android:gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataUtils.Add_Update_TasksListTitles"
+    android:orientation="vertical"
+    android:background="@color/background_color">
+
+    <include layout="@layout/toolbar"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/list_single_item_margin"
+        android:background="@drawable/list_item_selector">
+
+
+        <EditText
+            android:id="@+id/addListET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/list_single_item_margin"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/list_single_item_text_color"
+            android:textSize="@dimen/lists_single_item_textSize"
+            android:hint="@string/hint_list_title"
+            android:inputType="text"
+            android:background="@null"/>
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

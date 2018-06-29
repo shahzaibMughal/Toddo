@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tasks">
+
+
+    <include layout="@layout/toolbar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/tasksRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="@dimen/fab_weight_height"
+        android:layout_height="@dimen/fab_weight_height"
+        android:src="@drawable/ic_add"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:onClick="addTask"/>
+
+
+
+    <!-- Empty List View-->
+    <TextView
+        android:id="@+id/emptyTasksTV"
+        android:drawableTop="@drawable/ic_empty_tasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/nothing_to_do"
+        android:textSize="@dimen/size_of_empty_list_text"
+        android:textColor="@color/secondary_text_color"
+        android:visibility="gone"/>
+
+</android.support.design.widget.CoordinatorLayout>

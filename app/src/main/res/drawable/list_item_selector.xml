@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Item selected state-->
+    <item android:drawable="@color/color_list_item_selected" android:state_pressed="true" />
+    <item android:drawable="@color/color_list_item_selected" android:state_selected="true" />
+    <item android:drawable="@color/color_list_item_selected" android:state_activated="true" />
+
+    <!-- item unselected state-->
+    <item android:drawable="@android:color/white" />
+</selector>
